@@ -47,5 +47,103 @@
     "status": "200",
     "response_time": "0.896ms",
     "timestamp": "2025-06-05T23:13:13.839Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "10.188ms",
+    "timestamp": "2025-06-05T23:24:02.997Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "3.731ms",
+    "timestamp": "2025-06-05T23:26:02.647Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "5.235ms",
+    "timestamp": "2025-06-05T23:26:07.884Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "6.359ms",
+    "timestamp": "2025-06-05T23:26:51.512Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "4.338ms",
+    "timestamp": "2025-06-05T23:27:45.522Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "51.618ms",
+    "timestamp": "2025-06-05T23:27:51.548Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "3.544ms",
+    "timestamp": "2025-06-05T23:29:17.593Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "53.744ms",
+    "timestamp": "2025-06-05T23:29:22.168Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "3.784ms",
+    "timestamp": "2025-06-05T23:31:31.511Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "51.764ms",
+    "timestamp": "2025-06-05T23:31:51.986Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "51.675ms",
+    "timestamp": "2025-06-05T23:32:22.097Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "50.734ms",
+    "timestamp": "2025-06-05T23:32:40.599Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "1.138ms",
+    "timestamp": "2025-06-05T23:33:09.418Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "52.440ms",
+    "timestamp": "2025-06-05T23:33:14.198Z"
   }
 ]

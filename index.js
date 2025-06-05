@@ -1,4 +1,4 @@
-import express, { request } from "express";
+import express from "express";
 import { PORT, USERS_FILE, REQUESTS_FILE } from "./config.js";
 import {
   listUsers,

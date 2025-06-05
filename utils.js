@@ -1,5 +1,6 @@
 import { DATA_DIR, REQUESTS_FILE } from "./config.js";
 import { promises as fs } from "node:fs";
+import bcrypt from "bcrypt";
 
 export async function ensureFile(file, defaultValues) {
   try {
@@ -14,5 +15,8 @@ export const readJson = async (f) => JSON.parse(await fs.readFile(f, "utf-8"));
 export const writeJson = async (f, d) =>
   fs.writeFile(f, JSON.stringify(d, null, 2));
 
-export const logStream = async (f, d) =>
-  await writeFile(f, JSON.stringify(d, null, 2), { flag: "a" });
+export async function hashPassword(password) {
+  const saltRounds = 10; // Nivel de seguridad
+  const hashedPassword = await bcrypt.hash(password, saltRounds);
+  return hashedPassword;
+}

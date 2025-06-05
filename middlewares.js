@@ -2,6 +2,7 @@ import { USERS_FILE } from "./config.js";
 import { userSchema } from "./schemas.js";
 import { readJson, writeJson } from "./utils.js";
 import { randomUUID } from "node:crypto";
+import { hashPassword } from "./utils.js";
 
 export const listUsers = async (req, res, next) => {
   try {
@@ -37,7 +38,7 @@ export const createUser = async (req, res, next) => {
       id: randomUUID(),
       name: req.body.name,
       email: req.body.email,
-      password: req.body.password,
+      password: await hashPassword(req.body.password),
       role: req.body.role,
       fechaRegistro: new Date().toISOString().split("T")[0],
     };
