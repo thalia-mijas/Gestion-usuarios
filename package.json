@@ -1,0 +1,18 @@
+{
+  "name": "gestion-usuarios",
+  "version": "1.0.0",
+  "description": "API para crear, eliminar, actualizar y recuperar usuarios con express",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "joi": "^17.13.3",
+    "morgan": "^1.10.0"
+  }
+}

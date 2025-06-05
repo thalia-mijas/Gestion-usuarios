@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2a60aa65-6d4e-4cad-8468-ae075044d1eb",
+    "name": "Bonnie Giron",
+    "email": "bonagiron@example.com",
+    "password": "1234",
+    "role": "user",
+    "fechaRegistro": "2025-06-05"
+  },
+  {
+    "id": "a282f0d8-f504-4c9f-8ff0-363fe6fb0343",
+    "name": "Emily Tinoco",
+    "email": "emtinov3@example.com",
+    "password": "1234",
+    "role": "user",
+    "fechaRegistro": "2025-06-05"
+  },
+  {
+    "id": "a8aa9f78-e128-44fe-831f-d984958177a5",
+    "name": "Carlos Castillo",
+    "email": "carcas@example.com",
+    "password": "1234",
+    "role": "user",
+    "fechaRegistro": "2025-06-05"
+  },
+  {
+    "id": "a445eb4d-527e-4cac-9601-90f16be35ee9",
+    "name": "Thiago Mijas",
+    "email": "tmijas@example.com",
+    "password": "12345",
+    "role": "admin",
+    "fechaRegistro": "2025-06-05"
+  },
+  {
+    "id": "45a05702-da29-4082-849f-a5f86657a2b5",
+    "name": "Thalia Mijas",
+    "email": "tmijasabad@example.com",
+    "password": "1234",
+    "role": "user",
+    "fechaRegistro": "2025-06-05"
+  }
+]

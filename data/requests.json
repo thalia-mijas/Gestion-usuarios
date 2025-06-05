@@ -1,0 +1,51 @@
+[
+  {
+    "method": "GET",
+    "url": "/",
+    "status": "200",
+    "response_time": "3.268ms",
+    "timestamp": "2025-06-05T23:11:48.851Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/ee04f553-9fca-4aef-9be0-401bda6b7021",
+    "status": "200",
+    "response_time": "2.040ms",
+    "timestamp": "2025-06-05T23:12:18.972Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "4.784ms",
+    "timestamp": "2025-06-05T23:12:29.354Z"
+  },
+  {
+    "method": "PUT",
+    "url": "/aaaa5cfa-18a7-4ed7-98f0-092d947ba2fb",
+    "status": "409",
+    "response_time": "1.970ms",
+    "timestamp": "2025-06-05T23:12:56.309Z"
+  },
+  {
+    "method": "PUT",
+    "url": "/aaaa5cfa-18a7-4ed7-98f0-092d947ba2fb",
+    "status": "200",
+    "response_time": "3.911ms",
+    "timestamp": "2025-06-05T23:13:01.098Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/aaaa5cfa-18a7-4ed7-98f0-092d947ba2fb",
+    "status": "200",
+    "response_time": "1.257ms",
+    "timestamp": "2025-06-05T23:13:08.910Z"
+  },
+  {
+    "method": "GET",
+    "url": "/a445eb4d-527e-4cac-9601-90f16be35ee9",
+    "status": "200",
+    "response_time": "0.896ms",
+    "timestamp": "2025-06-05T23:13:13.839Z"
+  }
+]
