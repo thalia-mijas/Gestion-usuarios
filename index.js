@@ -7,8 +7,9 @@ import {
   findUser,
   updateUser,
   validateUser,
+  generateToken,
 } from "./middlewares.js";
-import { ensureFile, readJson, writeJson } from "./utils.js";
+import { ensureFile, readJson, verifyPassword, writeJson } from "./utils.js";
 import morgan from "morgan";
 
 const app = express();
@@ -45,6 +46,8 @@ app.put("/:id", [validateUser, updateUser], (req, res) => {});
 app.delete("/:id", deleteUser, (req, res) => {});
 
 app.get("/:id", findUser, (req, res) => {});
+
+app.post("/login", generateToken, (req, res) => {});
 
 app.listen(PORT, () => {
   console.log(`El servidor esta escuchando el puerto ${PORT}`);
