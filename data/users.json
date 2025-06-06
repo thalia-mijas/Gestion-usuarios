@@ -38,5 +38,13 @@
     "password": "$2b$10$WFHgv41Hvj0.RL.42qOcZuHoSr6gWHPyqs.uIVrmjvgofvYnazVM2",
     "role": "admin",
     "fechaRegistro": "2025-06-05"
+  },
+  {
+    "id": "d77ee3b7-12e3-43f5-a658-932e877b0f3d",
+    "name": "Jhonatan Mijas",
+    "email": "jlmijas@example.com",
+    "password": "$2b$10$9VzF/Lnbq9OO.uLQTfE8S.GkLBMCiPS402gD0pqvu9vxviGSVouw.",
+    "role": "admin",
+    "fechaRegistro": "2025-06-06"
   }
 ]

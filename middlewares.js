@@ -6,6 +6,8 @@ import { hashPassword } from "./utils.js";
 import jwt from "jsonwebtoken";
 import "dotenv/config";
 
+const SECRET_KEY = process.env.JWT_SECRET;
+
 export const listUsers = async (req, res, next) => {
   try {
     const users = await readJson(USERS_FILE);
@@ -121,15 +123,11 @@ export const findUser = async (req, res, next) => {
 
 export const generateToken = async (req, res, next) => {
   try {
-    const SECRET_KEY = process.env.JWT_SECRET;
     const { username, password } = req.body;
     const users = await readJson(USERS_FILE);
     const user = users.find((u) => u.name === username);
 
     if (!user) return res.status(404).json({ error: "El usuario no existe" });
-
-    console.log("Us:", user.name === username);
-    console.log("Ps:", await verifyPassword(password, user.password));
 
     if (
       user.name === username &&
@@ -138,10 +136,26 @@ export const generateToken = async (req, res, next) => {
       const payload = { username };
       const token = jwt.sign(payload, SECRET_KEY, { expiresIn: "1h" });
 
-      res.json({ token });
+      res.status(201).json({ token });
     } else {
       res.status(401).json({ message: "Credenciales incorrectas" });
     }
+  } catch (error) {
+    console.error("Error: ", error);
+    res.status(500).json({ message: "Error interno del servidor" });
+  }
+  next();
+};
+
+export const verifyToken = (req, res, next) => {
+  try {
+    const token = req.headers["authorization"];
+    if (!token) return res.status(403).json({ message: "Token requerido" });
+
+    jwt.verify(token, SECRET_KEY, (err, decoded) => {
+      if (err) return res.status(401).json({ message: "Token inválido" });
+      req.user = decoded;
+    });
   } catch (error) {
     console.error("Error: ", error);
     res.status(500).json({ message: "Error interno del servidor" });

@@ -327,5 +327,103 @@
     "status": "200",
     "response_time": "101.304ms",
     "timestamp": "2025-06-06T00:43:38.881Z"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": "200",
+    "response_time": "3.226ms",
+    "timestamp": "2025-06-06T01:34:27.382Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "54.403ms",
+    "timestamp": "2025-06-06T01:34:48.354Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "3.986ms",
+    "timestamp": "2025-06-06T01:37:41.856Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "4.251ms",
+    "timestamp": "2025-06-06T01:38:52.727Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "403",
+    "response_time": "1.728ms",
+    "timestamp": "2025-06-06T01:40:44.269Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "409",
+    "response_time": "6.782ms",
+    "timestamp": "2025-06-06T01:43:22.224Z"
+  },
+  {
+    "method": "POST",
+    "url": "/",
+    "status": "201",
+    "response_time": "56.054ms",
+    "timestamp": "2025-06-06T01:43:36.117Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/898be4eb-1a6a-41df-8bab-60209663cab5",
+    "status": "403",
+    "response_time": "0.861ms",
+    "timestamp": "2025-06-06T01:44:15.013Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/898be4eb-1a6a-41df-8bab-60209663cab5",
+    "status": "401",
+    "response_time": "0.484ms",
+    "timestamp": "2025-06-06T01:44:37.073Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/898be4eb-1a6a-41df-8bab-60209663cab5",
+    "status": "401",
+    "response_time": "1.241ms",
+    "timestamp": "2025-06-06T01:44:52.211Z"
+  },
+  {
+    "method": "POST",
+    "url": "/login",
+    "status": "200",
+    "response_time": "105.706ms",
+    "timestamp": "2025-06-06T01:45:09.517Z"
+  },
+  {
+    "method": "DELETE",
+    "url": "/898be4eb-1a6a-41df-8bab-60209663cab5",
+    "status": "200",
+    "response_time": "2.548ms",
+    "timestamp": "2025-06-06T01:45:20.108Z"
+  },
+  {
+    "method": "POST",
+    "url": "/login",
+    "status": "201",
+    "response_time": "53.736ms",
+    "timestamp": "2025-06-06T01:52:30.950Z"
+  },
+  {
+    "method": "GET",
+    "url": "/",
+    "status": "200",
+    "response_time": "2.316ms",
+    "timestamp": "2025-06-06T01:52:52.339Z"
   }
 ]

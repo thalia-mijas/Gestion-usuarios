@@ -1,5 +1,5 @@
 import express from "express";
-import { PORT, USERS_FILE, REQUESTS_FILE } from "./config.js";
+import { USERS_FILE, REQUESTS_FILE } from "./config.js";
 import {
   listUsers,
   createUser,
@@ -8,9 +8,13 @@ import {
   updateUser,
   validateUser,
   generateToken,
+  verifyToken,
 } from "./middlewares.js";
-import { ensureFile, readJson, verifyPassword, writeJson } from "./utils.js";
+import { ensureFile, readJson, writeJson } from "./utils.js";
 import morgan from "morgan";
+import "dotenv/config";
+
+const PORT = process.env.PORT;
 
 const app = express();
 
@@ -39,11 +43,11 @@ app.use(
 
 app.get("/", listUsers, (req, res) => {});
 
-app.post("/", [validateUser, createUser], (req, res) => {});
+app.post("/", [verifyToken, validateUser, createUser], (req, res) => {});
 
-app.put("/:id", [validateUser, updateUser], (req, res) => {});
+app.put("/:id", [verifyToken, validateUser, updateUser], (req, res) => {});
 
-app.delete("/:id", deleteUser, (req, res) => {});
+app.delete("/:id", [verifyToken, deleteUser], (req, res) => {});
 
 app.get("/:id", findUser, (req, res) => {});
 
